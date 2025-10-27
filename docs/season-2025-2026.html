@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSC AOU Egypt: 2025-2026 Season Blueprint</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts: Cairo for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles (Copied from main page) -->
+    <style>
+        :root {
+            --main-black: #000000;
+            --main-white: #ffffff;
+            --microsoft-blue: #0078d4;
+            --dark-blue: #203a5f;
+            --gray-text: #7d7d7d;
+            --light-gray-bg: #f2f2f2;
+            --dark-bg: #202020;
+            --link-hover: #165d9d;
+            --purple-accent: #5c2d91;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-gray-bg);
+            color: var(--dark-blue);
+        }
+
+        .section-title {
+            color: var(--dark-blue);
+            border-bottom: 3px solid var(--microsoft-blue);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card {
+            background-color: var(--main-white);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        /* Org chart specific styles */
+        .org-chart .role {
+            background-color: var(--dark-blue);
+            color: var(--main-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        .org-chart .role.sub-role {
+            background-color: var(--microsoft-blue);
+        }
+        .org-chart .role.leader-role {
+            background-color: var(--purple-accent);
+        }
+         .org-chart .role.member-role {
+            background-color: var(--light-gray-bg);
+            color: var(--dark-blue);
+            border: 1px solid var(--dark-blue);
+            font-weight: 500;
+        }
+
+        .org-chart .connector {
+            width: 2px;
+            background-color: var(--dark-blue);
+            margin: 0 auto;
+        }
+
+        /* Timeline styles (from main page) */
+        .timeline-item .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .timeline-item .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .timeline-dot {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: var(--main-white);
+            border: 4px solid var(--microsoft-blue);
+            border-radius: 9999px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header>
+        <div class="container mx-auto max-w-7xl text-center">
+            <div class="flex items-center justify-center gap-4 mt-10 mb-2">
+                <img src="logo.jpg" alt="A description of your logo" width="45" height="45" onerror="this.style.display='none'">
+                <h1 class="text-3xl font-extrabold tracking-tight">MSC AOU Egypt</h1>
+            </div>
+            <p class="text-lg md:text-xl font-medium text-gray-500">Season Blueprint (2025-2026)</p>
+            
+            <div class="mt-6">
+                <a href="index.html" class="inline-block bg-[var(--dark-blue)] text-white font-semibold px-6 py-2 rounded-lg hover:bg-[var(--link-hover)] transition-colors duration-300">
+                    &larr; Back to Main Charter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto max-w-7xl p-4 md:p-8">
+
+        <!-- Season Goals -->
+        <section id="goals" class="mb-12">
+            <h2 class="text-3xl font-bold text-center section-title w-max mx-auto">🎯 Season Goals (Fall 2025 – Spring 2026)</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mt-[-1rem] mb-8">
+                Let’s focus on <strong>4 main pillars</strong>, each with measurable outcomes:
+            </p>
+            <div class="card overflow-hidden shadow-lg">
+                <table class="w-full text-left">
+                    <thead class="bg-[var(--dark-blue)] text-white">
+                        <tr>
+                            <th class="p-4 font-semibold">Pillar</th>
+                            <th class="p-4 font-semibold">Objective</th>
+                            <th class="p-4 font-semibold">Key Metrics</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">1. Rebuild the Foundation</td>
+                            <td class="p-4 text-gray-700">Form all committees, define workflows, and strengthen leadership communication</td>
+                            <td class="p-4 text-gray-700">✅ All committees operational by <strong>early November</strong><br>✅ Weekly leadership syncs established</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">2. Grow & Engage Community</td>
+                            <td class="p-4 text-gray-700">Expand club visibility, attract new students, and foster community engagement</td>
+                            <td class="p-4 text-gray-700">🚀 <strong>25,000+ WhatsApp members</strong><br>🎉 <strong>3+ interactive on-campus events</strong></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">3. Develop Talent</td>
+                            <td class="p-4 text-gray-700">Build strong technical and professional skills through workshops, mentorship, and practice events</td>
+                            <td class="p-4 text-gray-700">💻 <strong>8+ workshops</strong> across AI, Web, Cyber, and Blockchain<br>🧠 <strong>Mentorship Program</strong> launched mid-year</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">4. Showcase & Collaborate</td>
+                            <td class="p-4 text-gray-700">Strengthen partnerships, celebrate achievements, and create national collaborations</td>
+                            <td class="p-4 text-gray-700">🤝 Collaborations with <strong>NU MSC & national chapters</strong><br>🌟 “<strong>Beyond the Code</strong>” year-end showcase</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Season Timeline -->
+        <section id="timeline" class="mb-12">
+            <h2 class="text-3xl font-bold text-center section-title w-max mx-auto">📆 Season Timeline (2025–2026)</h2>
+            <div class="relative mt-8 px-4">
+                <!-- Timeline Line -->
+                <div class="absolute h-full border-l-4 border-[var(--microsoft-blue)] left-1/2 transform -translate-x-1/2 hidden md:block"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+
+                    <!-- Oct 2025 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="md:text-right md:pr-12 mb-4 md:mb-0">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Oct 2025</p>
+                        </div>
+                        <div class="card p-6 md:ml-4">
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Team Formation & Onboarding</strong> (HR) - <em class="text-gray-500">By Oct 25</em></li>
+                                <li><strong>“Welcome to MSC” Campaign</strong> (Media & Marketing + PR) - <em class="text-gray-500">Oct 26–29</em></li>
+                                <li><strong>WhatsApp Public Community Launch</strong> (HR + PR) - <em class="text-gray-500">Oct 26–Nov 29</em></li>
+                                <li><strong>Draft Tech Roadmap</strong> (Tech Team) - <em class="text-gray-500">Oct 26–Nov 1</em></li>
+                                <li><strong>High Board & Core Team Meetings</strong> (President + HR) - <em class="text-gray-500">Oct 26</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Nov 2025 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                         <div class="card p-6 md:mr-4 order-2 md:order-1">
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Schedule & Book Room (with SU)</strong> (Vice President) - <em class="text-gray-500">Nov 1</em></li>
+                                <li><strong>Hands-On LLMs Workshop (Phi-4)</strong> (Tech + PR + Media) - <em class="text-gray-500">Nov 10–12</em></li>
+                                <li><strong>Post-workshop content & recap</strong> (Media + PR) - <em class="text-gray-500">Mid-Nov</em></li>
+                                <li><strong>Academic break (MTA)</strong> (All) - <em class="text-gray-500">to 25 Nov</em></li>
+                            </ul>
+                        </div>
+                        <div class="md:text-left md:pl-12 mb-4 md:mb-0 order-1 md:order-2">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Nov 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Dec 2025 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="md:text-right md:pr-12 mb-4 md:mb-0">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Dec 2025</p>
+                        </div>
+                        <div class="card p-6 md:ml-4">
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Prepare for the First Event</strong> (All) - <em class="text-gray-500">Dec 1–15</em></li>
+                                <li><strong>Workshop 1 (Cybersecurity & Cloud)</strong> (Tech + PR + Media) - <em class="text-gray-500">Dec 1-7</em></li>
+                                <li><strong>Workshop 2 (Web & App Dev)</strong> (Tech + PR + Media) - <em class="text-gray-500">Dec 8-14</em></li>
+                                <li><strong>First Event</strong> (All) - <em class="text-gray-500">Dec 15</em></li>
+                                <li><strong>Workshop 3 (Blockchain & Emerging Tech)</strong> (Tech + PR + Media) - <em class="text-gray-500">Dec 15-22</em></li>
+                                <li><strong>Workshop 4 (AI & Data Science)</strong> (Tech + PR + Media) - <em class="text-gray-500">Dec 23-30</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Jan 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                         <div class="card p-6 md:mr-4 order-2 md:order-1">
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Academic focus break (Finals)</strong> (All) - <em class="text-gray-500">Jan 1–25</em></li>
+                            </ul>
+                        </div>
+                        <div class="md:text-left md:pl-12 mb-4 md:mb-0 order-1 md:order-2">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Jan 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Feb 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="md:text-right md:pr-12 mb-4 md:mb-0">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Feb 2026</p>
+                        </div>
+                        <div class="card p-6 md:ml-4">
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Announce Mentorship programs</strong> (Tech + PR + Media) - <em class="text-gray-500">Early Feb</em></li>
+                                <li><strong>Core Team Trip / Chapter Meet-Up</strong> (HR + PR) - <em class="text-gray-500">Early Feb</em></li>
+                                <li><strong>Collaboration Event with NU MSC</strong> (All Teams) - <em class="text-gray-500">Mid Feb</em></li>
+                                <li><strong>3 Guest Speaker Sessions</strong> - <em class="text-gray-500">Feb</em></li>
+                                <li><strong>3 Alumni "Ask Me Anything" (AMA) Sessions</strong> - <em class="text-gray-500">Feb</em></li>
+                                <li><strong>Ramadan Podcast Series 🎙️</strong> (PR + Media) - <em class="text-gray-500">Feb 17 – Mar 19</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mar 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                         <div class="card p-6 md:mr-4 order-2 md:order-1">
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Core Team Iftar 🌙</strong> (PR + Media) - <em class="text-gray-500">Mid-Mar</em></li>
+                                <li><strong>Mentorship Program Launch</strong> (Tech + PR) - <em class="text-gray-500">Mid-Mar</em></li>
+                                <li><strong>Eid Al Fitr Break</strong> (All) - <em class="text-gray-500">Mar 20–25</em></li>
+                                <li><strong>4 Technical Workshops (AI, Web, Cyber, Blockchain)</strong> (Tech + PR + Media) - <em class="text-gray-500">Mar 25 – Apr 11</em></li>
+                            </ul>
+                        </div>
+                        <div class="md:text-left md:pl-12 mb-4 md:mb-0 order-1 md:order-2">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Mar 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Apr 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="md:text-right md:pr-12 mb-4 md:mb-0">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Apr 2026</p>
+                        </div>
+                        <div class="card p-6 md:ml-4">
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Coding Dojo / Katas (2 sessions)</strong> (Tech + PR + Media) - <em class="text-gray-500">Apr 20 – May 5</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- May 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                         <div class="card p-6 md:mr-4 order-2 md:order-1">
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Second Event</strong> (All) - <em class="text-gray-500">May 1 – May 25</em></li>
+                                <li><strong>Core Team Trip / Chapter Meet-Up</strong> (HR + PR) - <em class="text-gray-500">Mid May</em></li>
+                            </ul>
+                        </div>
+                        <div class="md:text-left md:pl-12 mb-4 md:mb-0 order-1 md:order-2">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">May 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Jun 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="md:text-right md:pr-12 mb-4 md:mb-0">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Jun 2026</p>
+                        </div>
+                        <div class="card p-6 md:ml-4">
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Academic break (Finals)</strong> (All) - <em class="text-gray-500">Jun 1–20</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Jul 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                         <div class="card p-6 md:mr-4 order-2 md:order-1">
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>AOU Summer Bootcamp (NU MSC)</strong> (Tech + PR + Media) - <em class="text-gray-500">July 10–20</em></li>
+                                <li><strong>Professional Development Day</strong> (PR + Media) - <em class="text-gray-500">July 30</em></li>
+                            </ul>
+                        </div>
+                        <div class="md:text-left md:pl-12 mb-4 md:mb-0 order-1 md:order-2">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Jul 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Aug 2026 -->
+                    <div class="timeline-item md:grid md:grid-cols-2 md:gap-8 items-start relative">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="md:text-right md:pr-12 mb-4 md:mb-0">
+                            <p class="text-3xl font-bold text-[var(--microsoft-blue)]">Aug 2026</p>
+                        </div>
+                        <div class="card p-6 md:ml-4">
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>“Beyond the Code” Year-End Event 🎉</strong> (All Teams) - <em class="text-gray-500">Aug 15</em></li>
+                                <li><strong>Publish “Season Highlights Report”</strong> (Media + PR + HR) - <em class="text-gray-500">Aug 16</em></li>
+                                <li><strong>Leadership Transition</strong> (President + HR) - <em class="text-gray-500">End of Aug</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Structure & Activities Count -->
+        <section id="structure-count" class="mb-12">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Team Structure -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-center section-title w-max mx-auto">Team Structure</h2>
+                    <div class="card p-6 text-center org-chart">
+                        <div class="role">President</div>
+                        <div class="connector h-4"></div>
+                        <div class="role">Vice President</div>
+                        <div class="connector h-4"></div>
+                        <div class="w-full h-2 bg-[var(--dark-blue)] rounded-full"></div>
+                        <div class="flex flex-col md:flex-row justify-around mt-4 space-y-4 md:space-y-0 md:space-x-4">
+                            
+                            <!-- PR Team -->
+                            <div class="flex-1 flex flex-col items-center">
+                                <div class="connector h-4"></div>
+                                <div class="role sub-role">Head & Co-Head: PR</div>
+                                <div class="connector h-4"></div>
+                                <div class="role member-role">Members</div>
+                            </div>
+                            
+                            <!-- HR Team -->
+                            <div class="flex-1 flex flex-col items-center">
+                                <div class="connector h-4"></div>
+                                <div class="role sub-role">Head & Co-Head: HR</div>
+                                <div class="connector h-4"></div>
+                                <div class="role member-role">Members</div>
+                            </div>
+
+                            <!-- Media Team -->
+                            <div class="flex-1 flex flex-col items-center">
+                                <div class="connector h-4"></div>
+                                <div class="role sub-role">Head & Co-Head: Media</div>
+                                <div class="connector h-4"></div>
+                                <div class="role member-role">Members</div>
+                            </div>
+
+                            <!-- Tech Team -->
+                            <div class="flex-1 flex flex-col items-center">
+                                <div class="connector h-4"></div>
+                                <div class="role sub-role">Head & Co-Head: Tech</div>
+                                <div class="connector h-4"></div>
+                                <div class="w-full h-2 bg-[var(--microsoft-blue)] rounded-full"></div>
+                                <div class="flex flex-col space-y-4 mt-4 w-full">
+                                    <div class="role leader-role w-full">Leaders: AI & Data Science</div>
+                                    <div class="role leader-role w-full">Leaders: Web & App Dev</div>
+                                    <div class="role leader-role w-full">Leaders: Cybersecurity & Cloud</div>
+                                    <div class="role leader-role w-full">Leaders: Blockchain & Emerging Tech</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activities Count -->
+                <div>
+                    <h2 class="text-3xl font-bold text-center section-title w-max mx-auto">Activities Count</h2>
+                    <div class="card p-6">
+                        <table class="w-full text-left">
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Events</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">4</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Workshops</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">9</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Coding Dojos / Katas</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">2</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Trips / Meet-Ups</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">2</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Mentorship Programs</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">1</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Online Sessions</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">6</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Podcast</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">1</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="p-3 font-semibold">Bootcamps</td>
+                                    <td class="p-3 text-right font-bold text-lg text-[var(--microsoft-blue)]">1</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="border-t-2 border-[var(--dark-blue)]">
+                                <tr>
+                                    <td class="p-3 font-bold text-lg">🎯 Total Major Activities</td>
+                                    <td class_name="p-3 text-right font-black text-2xl text-[var(--dark-blue)]">26</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teams Focus & Responsibilities -->
+        <section id="responsibilities" class="mb-12">
+            <h2 class="text-3xl font-bold text-center section-title w-max mx-auto">🧩 Teams Focus & Responsibilities</h2>
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3">🏛️ Leadership (President, VP & Heads)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Set the club's vision, strategy, and overall direction.</li>
+                        <li>Run the weekly High Board meeting to sync all teams.</li>
+                        <li>Run Monthly Team Meeting.</li>
+                        <li>Manage high-level partnerships and represent the club.</li>
+                        <li>Support and unblock all teams to help them achieve their goals.</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3">🎨 Media & Marketing Team</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Create <strong>2 fixed reels per week</strong> (Instagram, LinkedIn, etc.)</li>
+                        <li><strong>Brand and promote</strong> all events, workshops, and bootcamps</li>
+                        <li><strong>Film, photograph, and document</strong> every activity</li>
+                        <li>Grow our <strong>online and offline community reach</strong></li>
+                        <li>Maintain a <strong>consistent visual identity</strong> for our club</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3">💼 PR (Public Relations & Operations) Team</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>Organize all events, bootcamps, and activities</strong> from logistics to registration</li>
+                        <li><strong>Build partnerships, sponsors, and collaborations</strong></li>
+                        <li>Add <strong>engaging, fun, and memorable experiences</strong> to every event</li>
+                        <li>Coordinate <strong>fundraising and on-campus presence</strong></li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3">🧍‍♀️ HR (Human Resources & Engagement) Team</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Handle <strong>recruitment, onboarding, and dismissals</strong></li>
+                        <li>Conduct <strong>performance and satisfaction evaluations</strong></li>
+                        <li>Resolve <strong>conflicts and ensure positive team culture</strong></li>
+                        <li>Celebrate <strong>team birthdays and achievements</strong> (with PR)</li>
+                        <li>Collect <strong>weekly reports from HR members</strong> assigned to each team and summarize them for leadership</li>
+                    </ul>
+                </div>
+                <div class="card p-6 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-3">💻 Tech Team</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Plan and deliver <strong>technical workshops and bootcamps</strong></li>
+                        <li>Run <strong>Coding Dojos / Katas</strong> and mentorship programs</li>
+                        <li>Provide <strong>IT and tech support</strong> for all events</li>
+                        <li>Build, maintain, or automate <strong>club systems or websites</strong></li>
+                        <li>Support members’ <strong>technical growth</strong> through projects and internal learning sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notion Link -->
+        <section id="notion" class="mb-12">
+            <h2 class="text-3xl font-bold text-center section-title w-max mx-auto">Projects & Task Management</h2>
+            <div class="card p-4 text-center">
+                <p class="text-gray-400 mb-4">View my project roadmap and task management system</p>
+                <a href="#" 
+                    target="_blank" 
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                    Open Notion Workspace →
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
